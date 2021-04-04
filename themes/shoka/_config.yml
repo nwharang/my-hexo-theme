@@ -217,7 +217,6 @@ audio:
    - title: MyPlaylist
      list:
       - https://music.163.com/#/song?id=1473361577
-      - https://www.youtube.com/watch?v=KaF-K_ZgSzk
 # random image api
 image_server: # "https://acg.xydwz.cn/api/api.php"
 
