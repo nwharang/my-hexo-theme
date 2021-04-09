@@ -5,7 +5,7 @@ tags:
 ---
 
 <iframe
-  src="https://player.twitch.tv/?channel=ludwig&parent=nootif.tk"
+  src="https://player.twitch.tv/?channel=ludwig&parent=https://nootif.tk/"
   allowfullscreen="true"
   scrolling="no"
   height="720"
