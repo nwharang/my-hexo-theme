@@ -11,7 +11,7 @@
             "url": "https://nootif.tk/twitch/",
             "title": "twitch",
             "date_published": "2021-04-09T10:14:20.000Z",
-            "content_html": "<iframe\n  src=\"https://player.twitch.tv/?channel=ludwig&parent=https://nootif.tk/\"\n  allowfullscreen=\"true\"\n  scrolling=\"no\"\n  height=\"720\"\n  width=\"1280\">\n</iframe>\n",
+            "content_html": "<iframe\n  src=\"https://player.twitch.tv/?channel=ludwig&parent=nootif.tk\"\n  allowfullscreen=\"true\"\n  scrolling=\"no\"\n  height=\"720\"\n  width=\"1280\">\n</iframe>\n",
             "tags": []
         },
         {
