@@ -20,7 +20,7 @@
             <link>https://nootif.tk/twitch/</link>
             <pubDate>Fri, 09 Apr 2021 10:14:20 +0000</pubDate>
             <description><![CDATA[ &lt;iframe
-  src=&#34;https://player.twitch.tv/?channel=ludwig&amp;parent=nootif.tk&#34;
+  src=&#34;https://player.twitch.tv/?channel=ludwig&amp;parent=https://nootif.tk/&#34;
   allowfullscreen=&#34;true&#34;
   scrolling=&#34;no&#34;
   height=&#34;720&#34;
