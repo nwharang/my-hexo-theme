@@ -5,9 +5,9 @@ tags:
 ---
 
 <iframe
-  src="https://player.twitch.tv/?channel=ludwig&parent=nootif.tk"
+  src="https://player.twitch.tv/?channel=ludwig&parent=http://localhost:4000"
   allowfullscreen="true"
   scrolling="no"
-  height="1080"
-  width="100%">
+  height="720"
+  width="1280">
 </iframe>
