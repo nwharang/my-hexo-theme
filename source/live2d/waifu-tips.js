@@ -65,7 +65,7 @@ function loadWidget(config) {
 				window.ASTEROIDSPLAYERS.push(new Asteroids());
 			} else {
 				const script = document.createElement("script");
-				script.src = "https://cdn.jsdelivr.net/gh/stevenjoezhang/asteroids/asteroids.js";
+				script.src = "/live2d/asteroids.js";
 				document.head.appendChild(script);
 			}
 		});
@@ -129,14 +129,13 @@ function loadWidget(config) {
 
 	function showHitokoto() {
 		// 增加 hitokoto.cn 的 API
-		fetch("https://v1.hitokoto.cn/")
+		fetch("https://official-joke-api.appspot.com/random_joke")
 			.then(response => response.json())
 			.then(result => {
-				const text = `This sentence comes from <span>「${result.from}」</span>，It was submitted by <span>${result.creator}</span> on hitokoto.cn.`;
-				showMessage(result.hitokoto, 6000, 9);
+				showMessage(result.setup, 4000, 9);
 				setTimeout(() => {
-					showMessage(text, 4000, 9);
-				}, 6000);
+					showMessage(result.punchline, 4000, 9);
+				}, 4000);
 			});
 	}
 
