@@ -8,6 +8,6 @@ tags:
   src="https://player.twitch.tv/?channel=ludwig&parent=nootif.tk"
   allowfullscreen="true"
   scrolling="no"
-  height="378"
-  width="620">
+  height="1080"
+  width="100%">
 </iframe>
