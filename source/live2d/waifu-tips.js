@@ -129,11 +129,11 @@ function loadWidget(config) {
 
 	function showHitokoto() {
 		// 增加 hitokoto.cn 的 API
-		fetch("https://readme-jokes.vercel.app/api")
+		fetch("https://v1.hitokoto.cn/")
 			.then(response => response.json())
 			.then(result => {
-				const text = `This sentence comes from <span>「${result.Q.}」</span>，It was submitted by <span>${result.A.}</span> on hitokoto.cn.`;
-				showMessage(result.Q., 6000, 9);
+				const text = `This sentence comes from <span>「${result.from}」</span>，It was submitted by <span>${result.creator}</span> on hitokoto.cn.`;
+				showMessage(result.hitokoto, 6000, 9);
 				setTimeout(() => {
 					showMessage(text, 4000, 9);
 				}, 6000);
