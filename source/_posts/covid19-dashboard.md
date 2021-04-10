@@ -5,7 +5,7 @@ tags:
 ---
 **COVID-19 dashboard and map made by [Adam Alston](https://github.com/adamalston) and be modified by me**
 
-Check out [My App](covid19.NooTif.tk) yourself !!
+Check out [My App](https://covid19.NooTif.tk) yourself !!
 
 
 # 🦠 COVID-19 Dashboard &middot;
