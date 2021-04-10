@@ -7,6 +7,14 @@
     "home_page_url": "https://nootif.tk",
     "items": [
         {
+            "id": "https://nootif.tk/lowko-lastest-vids/",
+            "url": "https://nootif.tk/lowko-lastest-vids/",
+            "title": "lowko-lastest-vids",
+            "date_published": "2021-04-10T02:16:46.000Z",
+            "content_html": "<iframe class=\"latestVideoEmbed\" vnum='0' cid=\"UCZNTsLA6t6bRoj-5QRmqt_w\" width=\"600\" height=\"340\" frameborder=\"0\" allowfullscreen></iframe>\n<iframe class=\"latestVideoEmbed\" vnum='1' cid=\"UCZNTsLA6t6bRoj-5QRmqt_w\" width=\"600\" height=\"340\" frameborder=\"0\" allowfullscreen></iframe>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n<script>\nvar reqURL = \"https://api.rss2json.com/v1/api.json?rss_url=\" + encodeURIComponent(\"https://www.youtube.com/feeds/videos.xml?channel_id=\");\nfunction loadVideo(iframe) {\n  $.getJSON(reqURL + iframe.getAttribute('cid'),\n    function(data) {\n      var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);\n      console.log(videoNumber);\n      var link = data.items[videoNumber].link;\n      id = link.substr(link.indexOf(\"=\") + 1);\n      iframe.setAttribute(\"src\", \"https://youtube.com/embed/\" + id + \"?controls=0&autoplay=1\");\n    }\n  );\n}\nvar iframes = document.getElementsByClassName('latestVideoEmbed');\nfor (var i = 0, len = iframes.length; i < len; i++) {\n  loadVideo(iframes[i]);\n}\n</script>\n",
+            "tags": []
+        },
+        {
             "id": "https://nootif.tk/covid19-dashboard/",
             "url": "https://nootif.tk/covid19-dashboard/",
             "title": "Covid19 Dashboard",
