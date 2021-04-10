@@ -12,9 +12,9 @@
     <category term="NooTif" />
     <category term="Naughty" />
     <entry>
-        <id>https://nootif.tk/twitch/</id>
+        <id>https://nootif.tk/covid19-dashboard/</id>
         <title>Covid19 Dashboard</title>
-        <link rel="alternate" href="https://nootif.tk/twitch/"/>
+        <link rel="alternate" href="https://nootif.tk/covid19-dashboard/"/>
         <content type="html">&lt;p&gt;**COVID-19 dashboard and map made by [&lt;img data-src=&#34;https://github.com/adamalston&#34; alt=&#34;Adam Alston&#34; /&gt;(&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FkYW1hbHN0b24=&#34;&gt;https://github.com/adamalston&lt;/span&gt;) and be modified by me **&lt;/p&gt;
 &lt;h1 id=&#34;covid-19-dashboard-circle-ci-dashboard&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#covid-19-dashboard-circle-ci-dashboard&#34;&gt;#&lt;/a&gt; 🦠 COVID-19 Dashboard · &lt;a href=&#34;https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard&#34;&gt;&lt;img data-src=&#34;https://circleci.com/gh/adamalston/COVID-19-Dashboard.svg?style=shield&#34; alt=&#34;Circle CI&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;https://adamalston.github.io/COVID-19-Dashboard/&#34;&gt;&lt;img data-src=&#34;https://img.shields.io/website?down_message=down&amp;amp;label=gh-pages&amp;amp;up_message=passing&amp;amp;url=https%3A%2F%2Fadamalston.github.io%2FCOVID-19-Dashboard&#34; alt=&#34;Dashboard&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;COVID-19 dashboard and map built with &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ2F0c2J5anMub3JnLw==&#34;&gt;Gatsby&lt;/span&gt;, &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWFjdC1sZWFmbGV0LmpzLm9yZw==&#34;&gt;React Leaflet&lt;/span&gt;, and &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubWFwYm94LmNvbS8=&#34;&gt;Mapbox&lt;/span&gt;.&lt;/p&gt;
