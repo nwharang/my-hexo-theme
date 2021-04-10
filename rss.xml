@@ -10,83 +10,18 @@
         </author>
         <description>Naughty</description>
         <language>en</language>
-        <pubDate>Sat, 10 Apr 2021 04:35:13 +0000</pubDate>
-        <lastBuildDate>Sat, 10 Apr 2021 04:35:13 +0000</lastBuildDate>
+        <pubDate>Sat, 10 Apr 2021 02:16:46 +0000</pubDate>
+        <lastBuildDate>Sat, 10 Apr 2021 02:16:46 +0000</lastBuildDate>
         <category term="NooTif" />
         <category term="Naughty" />
         <item>
             <guid isPermalink="true">https://nootif.tk/lowko-lastest-vids/</guid>
-            <title></title>
+            <title>lowko-lastest-vids</title>
             <link>https://nootif.tk/lowko-lastest-vids/</link>
-            <pubDate>Sat, 10 Apr 2021 04:35:13 +0000</pubDate>
-            <description><![CDATA[ &lt;p&gt;// YOU WILL NEED TO ADD YOUR OWN API KEY IN QUOTES ON LINE 5, EVEN FOR THE PREVIEW TO WORK.&lt;br /&gt;
-//&lt;br /&gt;
-// GET YOUR API HERE &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb25zb2xlLmRldmVsb3BlcnMuZ29vZ2xlLmNvbS9hcGlzL2FwaQ==&#34;&gt;https://console.developers.google.com/apis/api&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;// &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20veW91dHViZS92My9kb2NzL3BsYXlsaXN0SXRlbXMvbGlzdA==&#34;&gt;https://developers.google.com/youtube/v3/docs/playlistItems/list&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;// &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb25zb2xlLmRldmVsb3BlcnMuZ29vZ2xlLmNvbS9hcGlzL2FwaS95b3V0dWJlLmdvb2dsZWFwaXMuY29tL292ZXJ2aWV3P3Byb2plY3Q9d2VidHV0LTE5NTExNSZhbXA7ZHVyYXRpb249UFQxSA==&#34;&gt;https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=webtut-195115&amp;amp;duration=PT1H&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;// &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/qxWrnhZEuRU&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;// &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9xeFdybmhaRXVSVS9tcWRlZmF1bHQuanBn&#34;&gt;https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;$(document).ready(function () {&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;var key = &#39;AIzaSyAtsMVKXF0VuPKTMbB4d6Y7zp1ipm1wcvA&#39;;
-var playlistId = &#39;PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB&#39;;
-var URL = &#39;https://www.googleapis.com/youtube/v3/playlistItems&#39;;
-
-
-var options = &amp;#123;
-    part: &#39;snippet&#39;,
-    key: key,
-    maxResults: 20,
-    playlistId: playlistId
-&amp;#125;
-
-loadVids();
-
-function loadVids() &amp;#123;
-    $.getJSON(URL, options, function (data) &amp;#123;
-        var id = data.items[0].snippet.resourceId.videoId;
-        mainVid(id);
-        resultsLoop(data);
-    &amp;#125;);
-&amp;#125;
-
-function mainVid(id) &amp;#123;
-    $(&#39;#video&#39;).html(`
-				&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;quot; src=&amp;quot;https://www.youtube.com/embed/$&amp;#123;id&amp;#125;&amp;quot; frameborder=&amp;quot;0&amp;quot; allow=&amp;quot;autoplay; encrypted-media&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-			`);
-&amp;#125;
-
-	
-function resultsLoop(data) &amp;#123;
-
-    $.each(data.items, function (i, item) &amp;#123;
-
-        var thumb = item.snippet.thumbnails.medium.url;
-        var title = item.snippet.title;
-        var desc = item.snippet.description.substring(0, 100);
-        var vid = item.snippet.resourceId.videoId;
-
-
-        $(&#39;main&#39;).append(`
-						&amp;lt;article class=&amp;quot;item&amp;quot; data-key=&amp;quot;$&amp;#123;vid&amp;#125;&amp;quot;&amp;gt;
-
-							&amp;lt;img src=&amp;quot;$&amp;#123;thumb&amp;#125;&amp;quot; alt=&amp;quot;&amp;quot; class=&amp;quot;thumb&amp;quot;&amp;gt;
-							&amp;lt;div class=&amp;quot;details&amp;quot;&amp;gt;
-								&amp;lt;h4&amp;gt;$&amp;#123;title&amp;#125;&amp;lt;/h4&amp;gt;
-								&amp;lt;p&amp;gt;$&amp;#123;desc&amp;#125;&amp;lt;/p&amp;gt;
-							&amp;lt;/div&amp;gt;
-
-						&amp;lt;/article&amp;gt;
-					`);
-    &amp;#125;);
-&amp;#125;
-
-	// CLICK EVENT
-$(&#39;main&#39;).on(&#39;click&#39;, &#39;article&#39;, function () &amp;#123;
-    var id = $(this).attr(&#39;data-key&#39;);
-    mainVid(id);
-&amp;#125;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;});&lt;/p&gt;
+            <pubDate>Sat, 10 Apr 2021 02:16:46 +0000</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;here-some-lastest-videos-from-my-favorite-caster-streamer-gamer-whatever-hope-you-like-it&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#here-some-lastest-videos-from-my-favorite-caster-streamer-gamer-whatever-hope-you-like-it&#34;&gt;#&lt;/a&gt; Here some lastest videos from my favorite caster , streamer , gamer , whatever , ... hope you like it !!&lt;/h1&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/vids.js&#34;&gt;&lt;/script&gt;
  ]]></description>
         </item>
         <item>
