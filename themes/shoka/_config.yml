@@ -91,13 +91,14 @@ iconfont: "1832207_c8i9n1ulxlt"
 menu:
   home: / || home
   #about: /about/ || user
-  # posts:
-  #   default: / || feather
-  #   archives: /archives/ || list-alt
-  #   categories: /categories/ || th
-  #   tags: /tags/ || tags
+  Covid19: https://covid19.nootif.tk/ || heart
+  posts:
+     default: / || feather
+     archives: /archives/ || list-alt
+     categories: /categories/ || th
+     tags: /tags/ || tags
   #friends: /friends/ || heart
-   #links: /links/ || magic
+  #links: /links/ || magic
 
 # Social Links
 # Usage: `Key: permalink || icon || color`
@@ -111,7 +112,7 @@ social:
   music: https://music.163.com/#/user/home?id=yourid || cloud-music || "#e60026"
   #weibo: https://weibo.com/yourname || weibo || "#ea716e"
   #about: https://about.me/yourname || address-card || "#3b5998"
-  #email: mailto:yourname@mail.com || envelope || "#55acd5"
+  email: mailto:nootifhuhong@mail.com || envelope || "#55acd5"
   #facebook: https://www.facebook.com/yourname || facebook
   #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
   youtube: https://youtube.com/freddinguyen95 || youtube
