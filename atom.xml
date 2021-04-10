@@ -8,67 +8,9 @@
     <author>
       <name>Naughty NooTif</name>
     </author>
-    <updated>2021-04-10T02:16:46.000Z</updated>
+    <updated>2021-04-09T10:14:20.000Z</updated>
     <category term="NooTif" />
     <category term="Naughty" />
-    <entry>
-        <id>https://nootif.tk/lowko-lastest-vids/</id>
-        <title>lowko-lastest-vids</title>
-        <link rel="alternate" href="https://nootif.tk/lowko-lastest-vids/"/>
-        <content type="html">&lt;h1 id=&#34;here-some-lastest-videos-from-my-favorite-caster-streamer-gamer-whatever-hope-you-like-it&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#here-some-lastest-videos-from-my-favorite-caster-streamer-gamer-whatever-hope-you-like-it&#34;&gt;#&lt;/a&gt; Here some lastest videos from my favorite caster , streamer , gamer , whatever , ... hope you like it !!&lt;/h1&gt;
-&lt;script src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;script&gt;
-$(document).ready(function () {
-    var key = &#39;AIzaSyAtsMVKXF0VuPKTMbB4d6Y7zp1ipm1wcvA&#39;;
-    var playlistId = &#39;PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB&#39;;
-    var URL = &#39;https://www.googleapis.com/youtube/v3/playlistItems&#39;;
-    var options = {
-        part: &#39;snippet&#39;,
-        key: key,
-        maxResults: 10,
-        playlistId: playlistId
-    }
-    function loadVids() {
-        $.getJSON(URL, options, function (data) {
-            var id = data.items[0].snippet.resourceId.videoId;
-            mainVid(id);
-            resultsLoop(data);
-        });
-    }
-    loadVids();
-    function mainVid(id) {
-        $(&#39;#video&#39;).html(`
-					&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/${id}&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
-				`);
-    }
-    function resultsLoop(data) {
-        $.each(data.items, function (i, item) {
-            var thumb = item.snippet.thumbnails.medium.url;
-            var title = item.snippet.title;
-            var desc = item.snippet.description.substring(0, 100);
-            var vid = item.snippet.resourceId.videoId;
-            $(&#39;main&#39;).append(`
-							&lt;article class=&#34;item&#34; data-key=&#34;${vid}&#34;&gt;
-								&lt;img data-src=&#34;${thumb}&#34; alt=&#34;&#34; class=&#34;thumb&#34;&gt;
-								&lt;div class=&#34;details&#34;&gt;
-									&lt;h4&gt;${title}&lt;/h4&gt;
-									&lt;p&gt;${desc}&lt;/p&gt;
-								&lt;/div&gt;
-							&lt;/article&gt;
-						`);
-        });
-    }
-		// CLICK EVENT
-    $(&#39;main&#39;).on(&#39;click&#39;, &#39;article&#39;, function () {
-        var id = $(this).attr(&#39;data-key&#39;);
-        mainVid(id);
-    });
-});
-&lt;/script&gt;
-</content>
-        <updated>2021-04-10T02:16:46.000Z</updated>
-    </entry>
     <entry>
         <id>https://nootif.tk/covid19-dashboard/</id>
         <title>Covid19 Dashboard</title>
