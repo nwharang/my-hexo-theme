@@ -16,6 +16,15 @@
         <title>lowko-lastest-vids</title>
         <link rel="alternate" href="https://nootif.tk/lowko-lastest-vids/"/>
         <content type="html">&lt;h1 id=&#34;here-some-lastest-videos-from-my-favorite-caster-streamer-gamer-whatever-hope-you-like-it&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#here-some-lastest-videos-from-my-favorite-caster-streamer-gamer-whatever-hope-you-like-it&#34;&gt;#&lt;/a&gt; Here some lastest videos from my favorite caster , streamer , gamer , whatever , ... hope you like it !!&lt;/h1&gt;
+&lt;div class=&#34;container&#34;&gt;
+	&lt;header&gt;
+		&lt;img data-src=&#34;https://richardmiddleton.me/projects/youtube/images/logo.png&#34; alt=&#34;&#34; class=&#34;logo&#34;&gt;
+	&lt;/header&gt;
+	&lt;section id=&#34;video&#34;&gt;
+	&lt;/section&gt;
+	&lt;main&gt;
+	&lt;/main&gt;
+&lt;/div&gt;
 &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&#34;&gt;&lt;/script&gt;
 &lt;script&gt;
 $(document).ready(function () {
