@@ -5,6 +5,8 @@ tags:
 ---
 **COVID-19 dashboard and map made by [Adam Alston](https://github.com/adamalston) and be modified by me**
 
+Check out [My App](covid19.NooTif.tk) yourself !!
+
 
 # 🦠 COVID-19 Dashboard &middot;
 [![Circle CI](https://circleci.com/gh/adamalston/COVID-19-Dashboard.svg?style=shield)](https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard)
