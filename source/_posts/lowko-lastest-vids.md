@@ -6,17 +6,8 @@ tags:
 
 # Here some lastest videos from my favorite caster , streamer , gamer , whatever , ... hope you like it !!
 
-<div class="container">
-	<header>
-		<img src="https://richardmiddleton.me/projects/youtube/images/logo.png" alt="" class="logo">
-	</header>
-	<section id="video">
-	</section>
-	<main>
-	</main>
-
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function () {
     var key = 'AIzaSyAtsMVKXF0VuPKTMbB4d6Y7zp1ipm1wcvA';
