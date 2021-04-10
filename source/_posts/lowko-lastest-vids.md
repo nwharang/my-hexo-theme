@@ -28,7 +28,6 @@ $(document).ready(function () {
         maxResults: 10,
         playlistId: playlistId
     }
-    loadVids();
     function loadVids() {
         $.getJSON(URL, options, function (data) {
             var id = data.items[0].snippet.resourceId.videoId;
@@ -36,6 +35,7 @@ $(document).ready(function () {
             resultsLoop(data);
         });
     }
+    loadVids();
     function mainVid(id) {
         $('#video').html(`
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
