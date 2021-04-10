@@ -13,15 +13,21 @@
     <category term="Naughty" />
     <entry>
         <id>https://nootif.tk/twitch/</id>
-        <title>twitch</title>
+        <title>Covid19 Dashboard</title>
         <link rel="alternate" href="https://nootif.tk/twitch/"/>
-        <content type="html">&lt;iframe
-  src=&#34;https://player.twitch.tv/?channel=ludwig&amp;parent=nootif.tk&#34;
-  allowfullscreen=&#34;true&#34;
-  scrolling=&#34;no&#34;
-  height=&#34;720&#34;
-  width=&#34;1280&#34;&gt;
-&lt;/iframe&gt;
+        <content type="html">&lt;p&gt;**COVID-19 dashboard and map made by [&lt;img data-src=&#34;https://github.com/adamalston&#34; alt=&#34;Adam Alston&#34; /&gt;(&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FkYW1hbHN0b24=&#34;&gt;https://github.com/adamalston&lt;/span&gt;) and be modified by me **&lt;/p&gt;
+&lt;h1 id=&#34;covid-19-dashboard-circle-ci-dashboard&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#covid-19-dashboard-circle-ci-dashboard&#34;&gt;#&lt;/a&gt; 🦠 COVID-19 Dashboard · &lt;a href=&#34;https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard&#34;&gt;&lt;img data-src=&#34;https://circleci.com/gh/adamalston/COVID-19-Dashboard.svg?style=shield&#34; alt=&#34;Circle CI&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;https://adamalston.github.io/COVID-19-Dashboard/&#34;&gt;&lt;img data-src=&#34;https://img.shields.io/website?down_message=down&amp;amp;label=gh-pages&amp;amp;up_message=passing&amp;amp;url=https%3A%2F%2Fadamalston.github.io%2FCOVID-19-Dashboard&#34; alt=&#34;Dashboard&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;COVID-19 dashboard and map built with &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ2F0c2J5anMub3JnLw==&#34;&gt;Gatsby&lt;/span&gt;, &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWFjdC1sZWFmbGV0LmpzLm9yZw==&#34;&gt;React Leaflet&lt;/span&gt;, and &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubWFwYm94LmNvbS8=&#34;&gt;Mapbox&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;src/assets/images/preview.png&#34; alt=&#34;COVID Map&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This dashboard includes data related to cases, deaths, and testing efforts. Information at a country level is displayed on cards that are activated on hover. Information at a global level (i.e. sum of all data) is displayed at the bottom of the page.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#data&#34;&gt;#&lt;/a&gt; 📊 Data&lt;/h2&gt;
+&lt;p&gt;The data sources for this project are &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FkYW1hbHN0b24vam9obnMtaG9wa2lucy1jb3ZpZC1kYXRh&#34;&gt;JHU CSSE COVID-19 Data&lt;/span&gt;, &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FkYW1hbHN0b24vbnl0LWNvdmlkLWRhdGE=&#34;&gt;The New York Times&lt;/span&gt;, &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud29ybGRvbWV0ZXJzLmluZm8vY29yb25hdmlydXMv&#34;&gt;Worldometers&lt;/span&gt;, and &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYXBwbGUuY29tL2NvdmlkMTkvbW9iaWxpdHk=&#34;&gt;Apple&lt;/span&gt;. These sources are updated in real time via the &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb3JvbmEubG1hby5uaW5qYS8=&#34;&gt;disease.sh&lt;/span&gt; endpoint as case data from around the world is reported.&lt;/p&gt;
+&lt;h2 id=&#34;️-additional-information&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#️-additional-information&#34;&gt;#&lt;/a&gt; 🗒️ Additional Information&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;World Health Organization (WHO): &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud2hvLmludC8=&#34;&gt;https://www.who.int/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;US CDC: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY2RjLmdvdi9jb3JvbmF2aXJ1cy8yMDE5LW5jb3YvaW5kZXguaHRtbA==&#34;&gt;https://www.cdc.gov/coronavirus/2019-ncov/index.html&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;European Centre for Disease Prevention and Control (ECDC): &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZWNkYy5ldXJvcGEuZXUvZW4vZ2VvZ3JhcGhpY2FsLWRpc3RyaWJ1dGlvbi0yMDE5LW5jb3YtY2FzZXM=&#34;&gt;https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <updated>2021-04-09T10:14:20.000Z</updated>
     </entry>
