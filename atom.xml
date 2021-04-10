@@ -8,7 +8,7 @@
     <author>
       <name>Naughty NooTif</name>
     </author>
-    <updated>2021-04-10T04:33:37.196Z</updated>
+    <updated>2021-04-10T04:35:13.250Z</updated>
     <category term="NooTif" />
     <category term="Naughty" />
     <entry>
@@ -84,7 +84,7 @@ $(&#39;main&#39;).on(&#39;click&#39;, &#39;article&#39;, function () &amp;#123;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;});&lt;/p&gt;
 </content>
-        <updated>2021-04-10T04:33:37.196Z</updated>
+        <updated>2021-04-10T04:35:13.250Z</updated>
     </entry>
     <entry>
         <id>https://nootif.tk/covid19-dashboard/</id>
