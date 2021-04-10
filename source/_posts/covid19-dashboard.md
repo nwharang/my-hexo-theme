@@ -3,7 +3,7 @@ title: Covid19 Dashboard
 date: 2021-04-09 17:14:20
 tags:
 ---
-**COVID-19 dashboard and map made by [![Adam Alston](https://github.com/adamalston)](https://github.com/adamalston) and be modified by me **
+**COVID-19 dashboard and map made by [Adam Alston](https://github.com/adamalston) and be modified by me**
 
 
 # 🦠 COVID-19 Dashboard &middot;
