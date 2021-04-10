@@ -29,7 +29,7 @@
 	&lt;main&gt;
 	&lt;/main&gt;
 &lt;/div&gt;
-&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
 &lt;script&gt;
 $(document).ready(function () {
     var key = &#39;AIzaSyAtsMVKXF0VuPKTMbB4d6Y7zp1ipm1wcvA&#39;;
