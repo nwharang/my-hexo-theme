@@ -86,19 +86,17 @@ function execute() {
       "maxResults": 3,
       "order": "date"
     }).then((response) => {
-            let output = document.getElementsByClassName("md body")[0]
+            let output = document.getElementsByClassName("md body")
             const { result } = response ;
-            let ifrm  = document.createElement("script")
-            ifrm.text +=  `         
+            result.items.forEach(item => {
+                console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
+                output.innerHTML +=  `         
                 <div class="col s3">
                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 `;
-            output.insertBefore(ifrm, output.childNodes[0]);
-            result.items.forEach(item => {
-                console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
             });
-              });
+    });
   }
 
   
