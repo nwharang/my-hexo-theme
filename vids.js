@@ -88,10 +88,12 @@ function execute() {
     }).then((response) => {
             let output = document.getElementsByClassName("md body")[0]
             const { result } = response ;
-            let ifrm  = document.createElement("iframe")
-            ifrm.setAttribute("src", `https://www.youtube.com/embed/${item.id.videoId}`);
-            ifrm.style.width = "640px";
-            ifrm.style.height = "480px";
+            let ifrm  = document.createElement("script")
+            ifrm.text +=  `         
+                <div class="col s3">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                `;
             output.insertBefore(ifrm, output.childNodes[0]);
             result.items.forEach(item => {
                 console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
