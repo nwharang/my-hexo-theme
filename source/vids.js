@@ -98,4 +98,4 @@ function execute() {
             });
     });
   }
-document.getElementsByClassName('col s3')[0].requestPictureInPicture();
+document.getElementsByClassName('vids')[0].requestPictureInPicture();
