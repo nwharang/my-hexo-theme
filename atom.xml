@@ -64,11 +64,10 @@
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;&lt;code&gt;My Stat&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img data-src=&#34;https://github-readme-stats.vercel.app/api?username=nootifmemory&amp;show_icons=true&amp;theme=tokyonight&amp;hide_title=true&amp;line_height=32&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
+&lt;p&gt;&lt;img data-src=&#34;https://github-readme-stats.vercel.app/api?username=nootifmemory&amp;show_icons=true&amp;theme=tokyonight&amp;hide_title=true&amp;line_height=32&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;&lt;img align=&#34;right&#34; data-src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=nootifmemory&amp;theme=tokyonight&amp;&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;code&gt;My Top Coding Languages&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img data-src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=nootifmemory&amp;theme=tokyonight&amp;&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
 </content>
         <category term="about" scheme="https://nootif.tk/tags/about/" />
         <updated>2013-12-24T10:49:32.000Z</updated>
