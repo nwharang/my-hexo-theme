@@ -1,6 +1,6 @@
 gapi.load("client", loadClient);
 function loadClient() {
-    gapi.client.setApiKey( "AIzaSyBOd8BrYroRwuMNf9RTSCe8iHa3EQxIJGc" );
+    gapi.client.setApiKey( "AIzaSyBL6xae05XTd640zee8PMVomSV2Fh63aKE" );
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { 
             execute();
@@ -83,7 +83,7 @@ function execute() {
         "snippet"
       ],
       "channelId": "UCZNTsLA6t6bRoj-5QRmqt_w",
-      "maxResults": 5,
+      "maxResults": 3,
       "order": "date"
     }).then((response) => {
             const { result } = response ;
