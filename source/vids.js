@@ -87,15 +87,18 @@ function execute() {
       "order": "date"
     }).then((response) => {
             var output = document.getElementsByClassName("md body")[0]
+            let number = 1
             const { result } = response ;
             result.items.forEach(item => {
                 console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
                 output.innerHTML +=  `         
-                <div class="vids">
+                <div class="vid$number">
                 <iframe width="100%" height="600" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 `;
+                number++
             });
     });
   }
+
 document.getElementsByClassName('vids')[0].requestPictureInPicture();
