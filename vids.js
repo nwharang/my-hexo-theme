@@ -98,6 +98,3 @@ function execute() {
             });
     });
   }
-
-  
-
