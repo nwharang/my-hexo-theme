@@ -86,7 +86,7 @@ function execute() {
       "maxResults": 3,
       "order": "date"
     }).then((response) => {
-            let output = document.getElementsByClassName("md body")
+            var output = document.getElementsByClassName("md body")[0]
             const { result } = response ;
             result.items.forEach(item => {
                 console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
