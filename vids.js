@@ -86,18 +86,18 @@ function execute() {
       "maxResults": 3,
       "order": "date"
     }).then((response) => {
+            let output = document.getElementsByClassName("md body")[0]
             const { result } = response ;
+            let ifrm  = document.createElement("iframe")
+            ifrm.setAttribute("src", `https://www.youtube.com/embed/${item.id.videoId}`);
+            ifrm.style.width = "640px";
+            ifrm.style.height = "480px";
+            output.insertBefore(ifrm, output.childNodes[0]);
             result.items.forEach(item => {
-
                 console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
             });
               });
   }
-var output = document.getElementsByClassName("md body")[0]
-let ifrm  = document.createElement("iframe")
-ifrm.setAttribute("src", "https://www.youtube.com/embed/${item.id.videoId}");
-ifrm.style.width = "640px";
-ifrm.style.height = "480px";
-output.insertBefore(ifrm, output.childNodes[0]);
+
   
 
