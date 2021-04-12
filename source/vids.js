@@ -88,16 +88,16 @@ function execute() {
     }).then((response) => {
             const { result } = response ;
             result.items.forEach(item => {
-              var output = document.getElementsByClassName("md body")[0]
-              let ifrm  = document.createElement("iframe")
-                ifrm.setAttribute("src", "https://www.youtube.com/embed/${item.id.videoId}");
-                ifrm.style.width = "640px";
-                ifrm.style.height = "480px";
-                output.insertBefore(ifrm, output.childNodes[0]);
+
                 console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
             });
               });
   }
-
+var output = document.getElementsByClassName("md body")[0]
+let ifrm  = document.createElement("iframe")
+ifrm.setAttribute("src", "https://www.youtube.com/embed/${item.id.videoId}");
+ifrm.style.width = "640px";
+ifrm.style.height = "480px";
+output.insertBefore(ifrm, output.childNodes[0]);
   
 
