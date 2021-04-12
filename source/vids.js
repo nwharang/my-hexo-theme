@@ -91,10 +91,11 @@ function execute() {
             result.items.forEach(item => {
                 console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
                 output.innerHTML +=  `         
-                <div class="col s3">
+                <div class="vids">
                 <iframe width="100%" height="600" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 `;
             });
     });
   }
+document.getElementsByClassName('col s3')[0].requestPictureInPicture();
