@@ -12,10 +12,14 @@
     <category term="NooTif" />
     <category term="Naughty" />
     <entry>
-        <id>https://nootif.tk/embed/</id>
-        <title>embed</title>
-        <link rel="alternate" href="https://nootif.tk/embed/"/>
-        <content type="html"></content>
+        <id>https://nootif.tk/embed-youtube/</id>
+        <title>embed-youtube</title>
+        <link rel="alternate" href="https://nootif.tk/embed-youtube/"/>
+        <content type="html">&lt;script src=&#34;https://apis.google.com/js/api.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/vids.js&#34;&gt;&lt;/script&gt;
+</content>
         <category term="youtube" scheme="https://nootif.tk/tags/youtube/" />
         <updated>2021-04-12T00:11:23.000Z</updated>
     </entry>
