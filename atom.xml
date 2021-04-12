@@ -50,9 +50,9 @@
         <id>https://nootif.tk/hello-world/</id>
         <title>Hello World</title>
         <link rel="alternate" href="https://nootif.tk/hello-world/"/>
-        <content type="html">&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;About Me&lt;/code&gt; &lt;br /&gt;
-&lt;img align=&#34;right&#34; data-src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=nootifmemory&amp;theme=tokyonight&amp;&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;&lt;/li&gt;
+        <content type="html">&lt;img align=&#34;right&#34; data-src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=nootifmemory&amp;theme=tokyonight&amp;&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;About Me&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;😙 My Name Is NooTif&lt;/li&gt;
