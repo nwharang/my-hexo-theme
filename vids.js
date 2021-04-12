@@ -1,77 +1,102 @@
-// YOU WILL NEED TO ADD YOUR OWN API KEY IN QUOTES ON LINE 5, EVEN FOR THE PREVIEW TO WORK.
-// 
-// GET YOUR API HERE https://console.developers.google.com/apis/api
+gapi.load("client", loadClient);
+function loadClient() {
+    gapi.client.setApiKey( "AIzaSyBOd8BrYroRwuMNf9RTSCe8iHa3EQxIJGc" );
+    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+        .then(function() { 
+            execute();
+         },
+                function(err) { console.error("Error loading GAPI client for API", err); });
+}
 
-
-// https://developers.google.com/youtube/v3/docs/playlistItems/list
-
-// https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=webtut-195115&duration=PT1H
-
-// <iframe width="560" height="315" src="https://www.youtube.com/embed/qxWrnhZEuRU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-// https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg
-
-
-$(document).ready(function () {
-
-    var key = 'AIzaSyAtsMVKXF0VuPKTMbB4d6Y7zp1ipm1wcvA';
-    var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
-    var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
-
-
-    var options = {
-        part: 'snippet',
-        key: key,
-        maxResults: 20,
-        playlistId: playlistId
-    }
-
-    loadVids();
-
-    function loadVids() {
-        $.getJSON(URL, options, function (data) {
-            var id = data.items[0].snippet.resourceId.videoId;
-            mainVid(id);
-            resultsLoop(data);
-        });
-    }
-
-    function mainVid(id) {
-        $('#video').html(`
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				`);
-    }
-
-		
-    function resultsLoop(data) {
-
-        $.each(data.items, function (i, item) {
-
-            var thumb = item.snippet.thumbnails.medium.url;
-            var title = item.snippet.title;
-            var desc = item.snippet.description.substring(0, 100);
-            var vid = item.snippet.resourceId.videoId;
-
-
-            $('main').append(`
-							<article class="item" data-key="${vid}">
-
-								<img src="${thumb}" alt="" class="thumb">
-								<div class="details">
-									<h4>${title}</h4>
-									<p>${desc}</p>
-								</div>
-
-							</article>
-						`);
-        });
-    }
-
-		// CLICK EVENT
-    $('main').on('click', 'article', function () {
-        var id = $(this).attr('data-key');
-        mainVid(id);
-    });
-
-
+/*
+const ytForm = document.getElementById('yt-form');
+const keywordInput = document.getElementById('keyword-input');
+const maxresultInput = document.getElementById('maxresult-input');
+const orderInput = document.getElementById('order-input');
+const videoList = document.getElementById('videoListContainer');
+var pageToken = '';
+  
+ytForm.addEventListener('submit', e => {
+    e.preventDefault();
+    execute();
 });
+  
+function paginate(e, obj) {
+    e.preventDefault();
+    pageToken = obj.getAttribute('data-id');
+    execute();
+}
+  
+// Make sure the client is loaded before calling this method.
+function execute() {
+    const searchString = keywordInput.value;
+    const maxresult = maxresultInput.value;
+    const orderby = orderInput.value;
+  
+    var arr_search = {
+        "part": 'snippet',
+        "type": 'video',
+        "order": orderby,
+        "maxResults": maxresult,
+        "q": searchString
+    };
+  
+    if (pageToken != '') {
+        arr_search.pageToken = pageToken;
+    }
+  
+    return gapi.client.youtube.search.list(arr_search)
+    .then(function(response) {
+        // Handle the results here (response.result has the parsed body).
+        const listItems = response.result.items;
+        if (listItems) {
+            let output = '<h4>Videos</h4><ul>';
+  
+            listItems.forEach(item => {
+                const videoId = item.id.videoId;
+                const videoTitle = item.snippet.title;
+                output += `
+                    <li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p>${videoTitle}</p></li>
+                `;
+            });
+            output += '</ul>';
+  
+            if (response.result.prevPageToken) {
+                output += `<br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)">Prev</a>`;
+            }
+  
+            if (response.result.nextPageToken) {
+                output += `<a href="#" class="paginate" data-id="${response.result.nextPageToken}" onclick="paginate(event, this)">Next</a>`;
+            }
+  
+            // Output list
+            videoList.innerHTML = output;
+        }
+    },
+    function(err) { console.error("Execute error", err); });
+}
+*/
+function execute() {
+    return gapi.client.youtube.search.list({
+      "part": [
+        "id",
+        "snippet"
+      ],
+      "channelId": "UCZNTsLA6t6bRoj-5QRmqt_w",
+      "maxResults": 5,
+      "order": "date"
+    }).then((response) => {
+            const { result } = response ;
+            result.items.forEach(item => {
+                console.log(`Title: ${item.snippet.title}\nDescription: ${item.snippet.description}\nID: ${item.id.videoId}`)
+            });
+              });
+  }
+
+  
+  var output = document.getElementsByClassName("md body")[0]
+  let ifrm  = document.createElement("iframe")
+  ifrm.setAttribute("src", "http://google.com/");
+  ifrm.style.width = "640px";
+  ifrm.style.height = "480px";
+  output.insertBefore(ifrm, output.childNodes[0]);
