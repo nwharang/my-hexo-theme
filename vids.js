@@ -1,6 +1,6 @@
 gapi.load("client", loadClient);
 function loadClient() {
-    gapi.client.setApiKey( process.env.Y_TOKEN );
+    gapi.client.setApiKey( "AIzaSyBOd8BrYroRwuMNf9RTSCe8iHa3EQxIJGc" );
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { 
             execute();
