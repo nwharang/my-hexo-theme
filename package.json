@@ -16,6 +16,7 @@
     "hexo-algoliasearch": "^0.4.2",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-browsersync": "^0.3.0",
+    "hexo-cli": "^4.2.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-deployer-heroku": "^0.1.2",
     "hexo-generator-category": "^1.0.0",
