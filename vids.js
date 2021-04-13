@@ -1,6 +1,6 @@
 gapi.load("client", loadClient);
 function loadClient() {
-    gapi.client.setApiKey( "AIzaSyBL6xae05XTd640zee8PMVomSV2Fh63aKE" );
+    gapi.client.setApiKey( "$env:SUPER_SECRET" );
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { 
             execute();
