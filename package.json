@@ -12,6 +12,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
+    "funny-log": "0.0.9",
     "hexo": "^5.0.0",
     "hexo-algoliasearch": "^0.4.2",
     "hexo-autoprefixer": "^2.0.0",

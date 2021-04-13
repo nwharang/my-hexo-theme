@@ -30,6 +30,7 @@ skip_render:
   - live2d/*
   - CNAME
   - vids.js
+  - youtube.css
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
