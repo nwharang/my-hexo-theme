@@ -142,11 +142,11 @@ minify:
       - '**/*.min.js'
 
 algolia:
-   appId: 
-   apiKey: 
-   adminApiKey: 
+   appId: 'INZ96GPYRA'
+   apiKey: 'b56891b16ebe5cc783f9939fcae59781'
+   adminApiKey: 'f3438db80216ee9c8d9e34e6a3758ad7'
    chunkSize: 5000
-   indexName: "shoka"
+   indexName: "NooTif"
    fields:
      - title
      - path
