@@ -142,9 +142,9 @@ minify:
       - '**/*.min.js'
 
 algolia:
-   appId: xiEBUhbfv1b6K8YKLvmtqkAq-MdYXbMMI
-   apiKey: Y1QwtrvAoW6aXooFVvmV4aFd
-   adminApiKey: euIQecFlmldD8A6K0aRBKWDf
+   appId: 
+   apiKey: 
+   adminApiKey: 
    chunkSize: 5000
    indexName: "shoka"
    fields:

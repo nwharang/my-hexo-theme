@@ -98,7 +98,7 @@ const themeColorListener = function () {
 
     var hideNeko = function() {
         transition(neko, {
-          delay: 2500,
+          delay: 1500,
           opacity: 0
         }, function() {
           BODY.removeChild(neko)
