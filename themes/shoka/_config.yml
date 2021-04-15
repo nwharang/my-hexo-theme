@@ -27,7 +27,7 @@ darkmode: true
 
 # By default the page will automatically scroll to the last viewed position
 # if `false`, automatic positioning will be turned off
-auto_scroll: true
+auto_scroll: false
 
 # Whether to show the loading cat
 loader:
@@ -192,7 +192,7 @@ valine:
   lang: en
   visitor: true # Article reading statistic
   NoRecordIP: false # Whether to record the commenter IP
-  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  serverURLs:  # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   powerMode: true
   tagMeta:
     visitor: Visitor
