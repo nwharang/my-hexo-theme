@@ -56,7 +56,7 @@
         <id>https://nootif.tk/hello-world/</id>
         <title>Hello World</title>
         <link rel="alternate" href="https://nootif.tk/hello-world/"/>
-        <content type="html">&lt;img align=&#34;right&#34; data-src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=nootifmemory&amp;theme=tokyonight&amp;&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
+        <content type="html">&lt;img align=&#34;right&#34; data-src=&#34;https://github.com/nootifmemory/KomattaSorata/blob/master/github-metrics.svg&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;About Me&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -72,6 +72,7 @@
 &lt;li&gt;&lt;code&gt;My Stat&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;img data-src=&#34;https://github-readme-stats.vercel.app/api?username=nootifmemory&amp;show_icons=true&amp;theme=tokyonight&amp;hide_title=true&amp;line_height=32&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
+&lt;img data-src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=nootifmemory&amp;theme=tokyonight&amp;&#34; alt=&#34;img&#34; width=&#34;400&#34; &gt;
 </content>
         <category term="about" scheme="https://nootif.tk/tags/about/" />
         <updated>2013-12-24T10:49:32.000Z</updated>
