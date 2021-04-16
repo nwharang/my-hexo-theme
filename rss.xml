@@ -10,10 +10,17 @@
         </author>
         <description>Naughty</description>
         <language>en</language>
-        <pubDate>Mon, 12 Apr 2021 12:43:37 +0000</pubDate>
-        <lastBuildDate>Mon, 12 Apr 2021 12:43:37 +0000</lastBuildDate>
+        <pubDate>Fri, 16 Apr 2021 12:39:49 +0000</pubDate>
+        <lastBuildDate>Fri, 16 Apr 2021 12:39:49 +0000</lastBuildDate>
         <category term="NooTif" />
         <category term="Naughty" />
+        <item>
+            <guid isPermalink="true">https://nootif.tk/loldata/</guid>
+            <title>loldata</title>
+            <link>https://nootif.tk/loldata/</link>
+            <pubDate>Fri, 16 Apr 2021 12:39:49 +0000</pubDate>
+            <description><![CDATA[ &lt;script src=&#34;/loldata.js&#34;&gt;&lt;/script&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://nootif.tk/embed%20twitch/</guid>
             <title>twitch</title>
