@@ -1,5 +1,5 @@
 function fetchdata () {
-  fetch("https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/486211408?begIndex=0&endIndex=1&", {
+  fetch("https://thingproxy.freeboard.io/fetch/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/486211408?begIndex=0&endIndex=1", {
   "headers": {
     "accept": "application/json, text/javascript, */*; q=0.01",
     "accept-language": "vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",
@@ -20,36 +20,4 @@ function fetchdata () {
  console.log(response);
 })};
 
-var getJSON = function(url, callback) {
-
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.responseType = 'json';
-  
-  xhr.onload = function() {
-  
-      var status = xhr.status;
-      
-      if (status == 200) {
-          callback(null, xhr.response);
-      } else {
-          callback(status);
-      }
-  };
-  
-  xhr.send();
-};
-
-getJSON('https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/486211408?begIndex=0&endIndex=15&',  function(err, data) {
-  
-  if (err != null) {
-      console.error(err);
-  } else {
-      
-      var text = `Date: ${data.date}
-Time: ${data.time}
-Unix time: ${data.milliseconds_since_epoch}`
-  
-      console.log(text);
-  }
-});
+fetchdata();
