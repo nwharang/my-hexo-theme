@@ -15,7 +15,8 @@
         <id>https://nootif.tk/loldata/</id>
         <title>loldata</title>
         <link rel="alternate" href="https://nootif.tk/loldata/"/>
-        <content type="html">&lt;script src=&#34;/loldata.js&#34;&gt;&lt;/script&gt;</content>
+        <content type="html">&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/loldata.js&#34;&gt;&lt;/script&gt;</content>
         <updated>2021-04-16T12:39:49.000Z</updated>
     </entry>
     <entry>

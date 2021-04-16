@@ -19,7 +19,8 @@
             <title>loldata</title>
             <link>https://nootif.tk/loldata/</link>
             <pubDate>Fri, 16 Apr 2021 12:39:49 +0000</pubDate>
-            <description><![CDATA[ &lt;script src=&#34;/loldata.js&#34;&gt;&lt;/script&gt; ]]></description>
+            <description><![CDATA[ &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/loldata.js&#34;&gt;&lt;/script&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://nootif.tk/embed%20twitch/</guid>
