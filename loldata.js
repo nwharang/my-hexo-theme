@@ -1,6 +1,24 @@
-async function fetchdata () {
+const sp = '%20';
+const champId = null;
+const queue = null;
+const endIndex = 1 ;
+const begIndex = 0 ;
+const champlist = []
+const champkey = []
 
-  let response = await fetch("https://thingproxy.freeboard.io/fetch/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/486211408?begIndex=0&endIndex=1", {
+
+async function fetchdata () {
+  let accId = '486211408';
+  let link = 'https://thingproxy.freeboard.io/fetch/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
+      if(champId != null)
+        link += 'champion=' +champId+'&';
+      if(queue != null)
+        link += 'queue=' +queue+'&';
+      if(endIndex != null)
+        link += 'endIndex=' +endIndex+'&';
+      if(begIndex != null)
+        link += 'begIndex=' +begIndex+'&';
+  let response = await fetch(link , {
   "headers": {
     "accept": "application/json, text/javascript, */*; q=0.01",
     "accept-language": "vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",
@@ -19,16 +37,23 @@ async function fetchdata () {
   "credentials": "include",
 });
 let data = await response.json()
-console.log(data.games.games[0].participantIdentities[0].player.summonerName)
-console.log(data.games.games[0].participants[0].championId)
+let summonerName = data.games.games[0].participantIdentities[0].player.summonerName;
+let championId = data.games.games[0].participants[0].championId;
+champion()
+console.log(champkey)
 }
 
 async function champion () {
   let response = await fetch("https://ddragon.leagueoflegends.com/cdn/11.8.1/data/vn_VN/champion.json")
-  let data = await response.json()
-  let  championid  = data.data
-  console.log(data)
-  console.log(championid)
-}
-fetchdata();
-champion();
+  let data = (await response.json())
+  var dataID = Object.entries(data.data)
+  dataID.forEach((s) => {
+    //console.log(`Champions: ${s[0]} is key : ${s[1].key}`)
+    var newLength  = champkey.push(s[1].key)
+    var newLength  = champlist.push(s[0])
+  });
+
+
+};
+fetchdata(); 
+
