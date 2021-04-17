@@ -3,9 +3,9 @@ const champId = null;
 const queue = null;
 const endIndex = 1 ;
 const begIndex = 0 ;
-const champlist = []
-const champkey = []
-
+var champlist = [];
+var champkey = [];
+var keys = [];
 
 async function fetchdata () {
   let accId = '486211408';
@@ -39,21 +39,20 @@ async function fetchdata () {
 let data = await response.json()
 let summonerName = data.games.games[0].participantIdentities[0].player.summonerName;
 let championId = data.games.games[0].participants[0].championId;
-champion()
-console.log(champkey)
+champion();
+var myJSON = JSON.stringify(champkey);
 }
 
 async function champion () {
   let response = await fetch("https://ddragon.leagueoflegends.com/cdn/11.8.1/data/vn_VN/champion.json")
-  let data = (await response.json())
-  var dataID = Object.entries(data.data)
+  let {data} = (await response.json())
+  var dataID = Object.entries(data)
+
   dataID.forEach((s) => {
     //console.log(`Champions: ${s[0]} is key : ${s[1].key}`)
-    var newLength  = champkey.push(s[1].key)
+    var newLength  = champkey.push(parseInt(s[1].key))
     var newLength  = champlist.push(s[0])
   });
-
-
 };
 fetchdata(); 
 
