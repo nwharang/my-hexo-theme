@@ -1,12 +1,11 @@
-const sp = '%20';
 const champId = null;
 const queue = null;
-const endIndex = 1 ;
+const endIndex = 10 ;
 const begIndex = 0 ;
 var champlist = [];
 var champkey = [];
 var keys = [];
-
+var output = document.getElementsByClassName("md body")[0];
 async function fetchdata () {
   let accId = '486211408';
   let link = 'https://thingproxy.freeboard.io/fetch/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
@@ -37,22 +36,36 @@ async function fetchdata () {
   "credentials": "include",
 });
 let data = await response.json()
-let summonerName = data.games.games[0].participantIdentities[0].player.summonerName;
-let championId = data.games.games[0].participants[0].championId;
-champion();
-var myJSON = JSON.stringify(champkey);
-}
+console.log(data)
+output.innerHTML += `<Strong>This Is A Example Of Undocument API via Proxy API to by pass CORS</strong> <br>
+League of Legends id : ${data.games.games[0].participantIdentities[0].player.summonerName}<br>
+`
+for (var i = endIndex-1; i >= 0 ; i--  ){
+  if ((data.games.games[i].participants[0].stats.win) != true){
+    var gameState = "LOSE"
+  }else {
+    var gameState = "WIN"
+  };
+  if ((data.games.games[i].mapId) != "11" ){
+    var mapId = "Howling Abyss"
+  }else {
+    var mapId = "Summoner's Rift"
+  };
+output.innerHTML += `${endIndex-i}.${await champion(data.games.games[i].participants[0].championId)} , K/D/A: 
+${data.games.games[i].participants[0].stats.kills}/${data.games.games[i].participants[0].stats.deaths}/${data.games.games[i].participants[0].stats.assists} , Gold: ${data.games.games[i].participants[0].stats.goldEarned}
+, ${gameState} , Map : ${mapId} , Land :${data.games.games[i].participants[0].timeline.lane} <br>`
+}}
 
-async function champion () {
+async function champion (championId) {
   let response = await fetch("https://ddragon.leagueoflegends.com/cdn/11.8.1/data/vn_VN/champion.json")
   let {data} = (await response.json())
-  var dataID = Object.entries(data)
 
-  dataID.forEach((s) => {
-    //console.log(`Champions: ${s[0]} is key : ${s[1].key}`)
-    var newLength  = champkey.push(parseInt(s[1].key))
-    var newLength  = champlist.push(s[0])
-  });
+for (var i = 0 in data)
+  if ( data[i].key != championId ){
+    continue;
+  } else {
+    return data[i].id;
+  }
 };
 fetchdata(); 
 
