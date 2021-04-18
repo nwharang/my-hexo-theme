@@ -11,8 +11,12 @@
             "url": "https://nootif.tk/loldata/",
             "title": "loldata",
             "date_published": "2021-04-16T12:39:49.000Z",
-            "content_html": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js\"></script>\n<script src=\"/loldata.js\"></script>",
-            "tags": []
+            "content_html": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js\"></script>\n<script id=\"script\" src=\"/loldata.js\"></script>",
+            "tags": [
+                "api",
+                "undocument",
+                "proxyapi"
+            ]
         },
         {
             "id": "https://nootif.tk/embed%20twitch/",
@@ -31,7 +35,9 @@
             "date_published": "2021-04-12T00:11:23.000Z",
             "content_html": "<script src=\"https://apis.google.com/js/api.js\"></script>\n<script src=\"/vids.js\"></script>\n",
             "tags": [
-                "youtube"
+                "youtube",
+                "api",
+                "document"
             ]
         },
         {

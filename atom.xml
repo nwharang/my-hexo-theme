@@ -16,7 +16,10 @@
         <title>loldata</title>
         <link rel="alternate" href="https://nootif.tk/loldata/"/>
         <content type="html">&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/loldata.js&#34;&gt;&lt;/script&gt;</content>
+&lt;script id=&#34;script&#34; src=&#34;/loldata.js&#34;&gt;&lt;/script&gt;</content>
+        <category term="api" scheme="https://nootif.tk/tags/api/" />
+        <category term="undocument" scheme="https://nootif.tk/tags/undocument/" />
+        <category term="proxyapi" scheme="https://nootif.tk/tags/proxyapi/" />
         <updated>2021-04-16T12:39:49.000Z</updated>
     </entry>
     <entry>
@@ -35,6 +38,8 @@
 &lt;script src=&#34;/vids.js&#34;&gt;&lt;/script&gt;
 </content>
         <category term="youtube" scheme="https://nootif.tk/tags/youtube/" />
+        <category term="api" scheme="https://nootif.tk/tags/api/" />
+        <category term="document" scheme="https://nootif.tk/tags/document/" />
         <updated>2021-04-12T00:11:23.000Z</updated>
     </entry>
     <entry>
