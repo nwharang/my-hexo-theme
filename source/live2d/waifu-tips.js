@@ -89,9 +89,11 @@ function loadWidget(config) {
 			}, 3000);
 		});
 		const devtools = () => {};
-		console.log("%c", devtools);
+
+		//console.log("%c", devtools);
 		devtools.toString = () => {
 			showMessage("Haha, you opened the console, do you want to see my little secret?", 6000, 9);
+			
 		};
 		window.addEventListener("copy", () => {
 			showMessage("What have you copied? Remember to add the source when reprinting!", 6000, 9);

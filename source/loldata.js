@@ -1,7 +1,7 @@
-const champId = null;
-const queue = null;
-const endIndex = 10 ;
-const begIndex = 0 ;
+var champId = null;
+var queue = null;
+var endIndex = 10 ;
+var begIndex = 0 ;
 var champlist = [];
 var champkey = [];
 var keys = [];
@@ -36,7 +36,6 @@ async function fetchdata () {
   "credentials": "include",
 });
 let data = await response.json()
-console.log(data)
 output.innerHTML += `<Strong>This Is A Example Of Undocument API via Proxy API to by pass CORS</strong> <br>
 League of Legends id : ${data.games.games[0].participantIdentities[0].player.summonerName}<br>
 `
