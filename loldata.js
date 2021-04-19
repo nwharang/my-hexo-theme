@@ -8,7 +8,7 @@ var keys = [];
 var output = document.getElementsByClassName("md body")[0];
 async function fetchdata () {
   let accId = '486211408';
-  let link = 'https://cors-anywhere.herokuapp.com/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
+  let link = 'https://obscure-woodland-31326.herokuapp.com/fetch/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
       if(champId != null)
         link += 'champion=' +champId+'&';
       if(queue != null)
