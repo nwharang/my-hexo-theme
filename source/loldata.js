@@ -8,7 +8,7 @@ var keys = [];
 var output = document.getElementsByClassName("md body")[0];
 async function fetchdata () {
   let accId = '486211408';
-  let link = 'https://app.cors.bridged.cc/?method=GET&url=https://api.allorigins.win/raw?url=https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
+  let link = 'https://cors.bridged.cc/https://api.allorigins.win/raw?url=https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
       if(champId != null)
         link += 'champion=' +champId+'&';
       if(queue != null)
