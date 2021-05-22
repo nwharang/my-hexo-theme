@@ -27,9 +27,7 @@ jobs:
           npm install -g hexo-cli
       - name: Deploy Algolia
         run: |
-          hexo algolia --debug
-          pwd >> path
-          cat path
+          hexo algolia
       - name: Build
         run: npm run build
       - name: Deploy
