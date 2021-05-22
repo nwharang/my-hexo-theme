@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+const sp = '%20';
+const champId = null;
+const queue = null;
+const endIndex = 10 ;
+const begIndex = 0 ;
+const summonerName = undefined ;
+const championId = ``;
+const fetchdata = async function () {
+=======
 var champId = null;
 var queue = null;
 var endIndex = 10 ;
@@ -7,6 +17,7 @@ var champkey = [];
 var keys = [];
 var output = document.getElementsByClassName("md body")[0];
 async function fetchdata () {
+>>>>>>> 101d826a6b785bacb14a795bd3d08c30c4e310af
   let accId = '486211408';
   let link = 'https://obscure-woodland-31326.herokuapp.com/fetch/https://acs-garena.leagueoflegends.com/v1/stats/player_history/VN/' + await accId + '?';
       if(champId != null)
@@ -36,6 +47,39 @@ async function fetchdata () {
   "credentials": "include",
 });
 let data = await response.json()
+<<<<<<< HEAD
+var output = document.getElementsByClassName("md body")[0]
+var summonerName = data.games.games[0].participantIdentities[0].player.summonerName;
+console.log(data)
+console.log(await champion (data.games.games[9].participants[0].championId));
+console.log(await champion (data.games.games[8].participants[0].championId));
+console.log(await champion (data.games.games[7].participants[0].championId));
+console.log(await champion (data.games.games[6].participants[0].championId));
+console.log(await champion (data.games.games[5].participants[0].championId));
+console.log(await champion (data.games.games[4].participants[0].championId));
+console.log(await champion (data.games.games[3].participants[0].championId));
+console.log(await champion (data.games.games[2].participants[0].championId));
+console.log(await champion (data.games.games[1].participants[0].championId));
+console.log(await champion (data.games.games[0].participants[0].championId));
+
+};
+
+async function champion (championId) {
+
+  let response = await fetch("https://ddragon.leagueoflegends.com/cdn/11.8.1/data/vn_VN/champion.json")
+  let { data } = await response.json()
+  for  (var i = 0 in data ) {
+    if ( data[i].key != championId ){
+      continue;
+    } else {
+      return data[i].id
+    }
+  }
+}
+
+
+fetchdata();
+=======
 output.innerHTML += `<Strong>This Is A Example Of Undocument API via Proxy API to by pass CORS</strong> <br>
 League of Legends id : ${data.games.games[0].participantIdentities[0].player.summonerName}<br>
 `
@@ -67,3 +111,4 @@ for (var i = 0 in data)
   }
 };
 fetchdata(); 
+>>>>>>> 101d826a6b785bacb14a795bd3d08c30c4e310af
