@@ -30,12 +30,9 @@ jobs:
           hexo algolia
       - name: Build
         run: npm run build
-        env:
-          API_KEY: ${{ secrets.Y_TOKEN }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          API_KEY: ${{ secrets.Y_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: master  # deploying branch
