@@ -1,5 +1,5 @@
 ---
-title: loldata
+title: LOL VN DATA
 date: 2021-04-16 19:39:49
 tags: 
     - api
